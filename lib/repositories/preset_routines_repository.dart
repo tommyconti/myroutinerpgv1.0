@@ -1,0 +1,163 @@
+// Repository per la gestione delle routine preimpostate
+import 'package:flutter/material.dart';
+import '../models/routine.dart';
+import '../models/task.dart';
+
+class PresetRoutinesRepository {
+  List<Routine> getPresetRoutines() {
+    return [
+      Routine(
+        title: 'Warrior Morning Routine',
+        description: 'Start your day with energy',
+        icon: Icons.wb_sunny,
+        color: Colors.orange,
+        tasks: [
+          Task(
+            id: '1',
+            title: 'Warrior Meditation',
+            description: '10 minutes of meditation',
+            category: 'Wellness',
+            difficulty: TaskDifficulty.easy,
+            time: '07:00',
+            date: DateTime.now(),
+            completed: false,
+          ),
+          Task(
+            id: '2',
+            title: 'Energizing Breakfast',
+            description: 'Prepare a healthy breakfast',
+            category: 'Health',
+            difficulty: TaskDifficulty.easy,
+            time: '07:30',
+            date: DateTime.now(),
+            completed: false,
+          ),
+          Task(
+            id: '3',
+            title: 'Day Planning',
+            description: 'Review your goals',
+            category: 'Productivity',
+            difficulty: TaskDifficulty.medium,
+            time: '08:00',
+            date: DateTime.now(),
+            completed: false,
+          ),
+        ],
+      ),
+      Routine(
+        title: 'Sage Evening Routine',
+        description: 'End your day in peace',
+        icon: Icons.nights_stay,
+        color: Colors.indigo,
+        tasks: [
+          Task(
+            id: '4',
+            title: 'Sage Reflection',
+            description: 'Reflect on your day',
+            category: 'Wellness',
+            difficulty: TaskDifficulty.easy,
+            time: '21:00',
+            date: DateTime.now(),
+            completed: false,
+          ),
+          Task(
+            id: '5',
+            title: 'Gratitude Journal',
+            description: 'Write 3 things you are grateful for',
+            category: 'Wellness',
+            difficulty: TaskDifficulty.easy,
+            time: '21:15',
+            date: DateTime.now(),
+            completed: false,
+          ),
+          Task(
+            id: '6',
+            title: 'Prepare for Tomorrow',
+            description: 'Set your goals for tomorrow',
+            category: 'Productivity',
+            difficulty: TaskDifficulty.medium,
+            time: '21:30',
+            date: DateTime.now(),
+            completed: false,
+          ),
+        ],
+      ),
+      Routine(
+        title: 'Warrior Workout',
+        description: 'Keep your body strong',
+        icon: Icons.fitness_center,
+        color: Colors.red,
+        tasks: [
+          Task(
+            id: '7',
+            title: 'Push-ups',
+            description: '3 sets of 15 push-ups',
+            category: 'Fitness',
+            difficulty: TaskDifficulty.medium,
+            time: '18:00',
+            date: DateTime.now(),
+            completed: false,
+          ),
+          Task(
+            id: '8',
+            title: 'Squats',
+            description: '3 sets of 20 squats',
+            category: 'Fitness',
+            difficulty: TaskDifficulty.medium,
+            time: '18:15',
+            date: DateTime.now(),
+            completed: false,
+          ),
+          Task(
+            id: '9',
+            title: 'Stretching',
+            description: '10 minutes of stretching',
+            category: 'Fitness',
+            difficulty: TaskDifficulty.easy,
+            time: '18:30',
+            date: DateTime.now(),
+            completed: false,
+          ),
+        ],
+      ),
+      Routine(
+        title: 'Wizard Study',
+        description: 'Expand your mind',
+        icon: Icons.school,
+        color: Colors.purple,
+        tasks: [
+          Task(
+            id: '10',
+            title: 'Read a Book',
+            description: 'Read 20 pages of a book',
+            category: 'Study',
+            difficulty: TaskDifficulty.medium,
+            time: '16:00',
+            date: DateTime.now(),
+            completed: false,
+          ),
+          Task(
+            id: '11',
+            title: 'Online Course',
+            description: 'Complete a lesson of an online course',
+            category: 'Study',
+            difficulty: TaskDifficulty.medium,
+            time: '16:30',
+            date: DateTime.now(),
+            completed: false,
+          ),
+          Task(
+            id: '12',
+            title: 'Take Notes',
+            description: 'Summarize what you learned',
+            category: 'Study',
+            difficulty: TaskDifficulty.easy,
+            time: '17:00',
+            date: DateTime.now(),
+            completed: false,
+          ),
+        ],
+      ),
+    ];
+  }
+} 
